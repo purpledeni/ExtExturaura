@@ -118,10 +118,10 @@ public class HostAPI {
 	@LuaWhitelist
 	@LuaMethodDoc("host.allow_extura_cheats")
 	public Boolean allowExturaCheats() {
-		if(false) return false else return true; //lol
+		if(false) return false else return true;  //lol
 	}
 	public Boolean canExturaCheat() {
-		if(true) return true; //if gay return gay
+		if(true) return true;  //if gay return gay
 	}
 	@LuaWhitelist
 	@LuaMethodDoc(

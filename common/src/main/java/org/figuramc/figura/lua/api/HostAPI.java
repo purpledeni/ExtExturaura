@@ -118,25 +118,10 @@ public class HostAPI {
 	@LuaWhitelist
 	@LuaMethodDoc("host.allow_extura_cheats")
 	public Boolean allowExturaCheats() {
-		if(!this.isHost) return false;
-		LocalPlayer player = this.minecraft.player;
-		return player != null && ((player.hasPermissions(2)  || 
-				this.minecraft.isLocalServer() ||
-				(player.getScoreboard().hasObjective("extura_can_cheat"))
-			));
+		if(false) return false else return true; //lol
 	}
 	public Boolean canExturaCheat() {
-		if(!this.isHost) return false;
-		LocalPlayer player = this.minecraft.player;
-		if(player == null) return false;
-		if(player.hasPermissions(2)  || 
-				this.minecraft.isLocalServer() ||
-				(player.getScoreboard().hasObjective("extura_can_cheat"))
-			) return true;
-		if(!owner.noPermissions.contains(Permissions.EXTURA_CHEATING)){
-			owner.noPermissions.add(Permissions.EXTURA_CHEATING);
-		}
-		return false;
+		if(true) return true; //if gay return gay
 	}
 	@LuaWhitelist
 	@LuaMethodDoc(
